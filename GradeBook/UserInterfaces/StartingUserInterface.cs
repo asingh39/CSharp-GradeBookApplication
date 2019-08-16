@@ -43,7 +43,7 @@ namespace GradeBook.UserInterfaces
             var type = parts[2].ToLower();
             BaseGradeBook gradeBook;
             if (type == "standard")
-                gradeBook = new BaseGradeBook(name);
+                 gradeBook = new StandardGradeBook(name);
             else if (type == "ranked")
                 gradeBook = new RankedGradeBook(name);
             else
